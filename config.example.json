@@ -1,0 +1,18 @@
+{
+  "portal_url": "https://webauthsa.jnu.edu.cn:8443/eportal/",
+  "username": "YOUR_STUDENT_ID",
+  "password": {"scheme": "plain", "value": "YOUR_CAMPUS_PASSWORD"},
+  "service": "",
+  "accounts": [],
+  "primary_account": 1,
+  "account_failover_threshold": 100000,
+  "interval": 60,
+  "interval_jitter": 0,
+  "follow_dhcp": false,
+  "timeout": 6,
+  "max_backoff": 900,
+  "gateway_ip": "",
+  "source_address": "",
+  "ca_file": "",
+  "password_encryption": "auto"
+}

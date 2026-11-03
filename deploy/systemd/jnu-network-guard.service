@@ -1,0 +1,17 @@
+[Unit]
+Description=Recover the configured JNU Wi-Fi link without desktop login
+Wants=NetworkManager.service
+After=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 -I /usr/local/libexec/jnu-network-guard.py recover
+TimeoutStartSec=90
+StateDirectory=jnu-network-guard
+StateDirectoryMode=0700
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+UMask=0077
+LimitCORE=0

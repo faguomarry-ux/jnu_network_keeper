@@ -1,0 +1,12 @@
+[Unit]
+Description=Check the configured JNU Wi-Fi link periodically
+
+[Timer]
+OnBootSec=15
+OnUnitInactiveSec=60
+RandomizedDelaySec=30
+AccuracySec=5
+Unit=jnu-network-guard.service
+
+[Install]
+WantedBy=timers.target
